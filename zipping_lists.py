@@ -23,4 +23,5 @@ with open(filename, "w", encoding="utf-8", newline="",) as output_file:
         print(albums_dict)
         transformed_dict = {field_keys[key]: value for key, value in albums_dict.items()}
         writer.writerow(transformed_dict)
+        # writer.writerow(transformed_dict)
 # print(getattr(csv.excel, "delimiter"))
