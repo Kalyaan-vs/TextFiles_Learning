@@ -106,7 +106,7 @@ columns = ["country", "gold", "silver", "bronze", "rank"]
 filename = "country_medals.csv"
 
 with open(filename, "w", encoding="utf-8", newline="") as output_file:
-    writer = csv.DictWriter(output_file, fieldnames=columns, extrasaction="ignore")
+    writer = csv.DictWriter(output_file, fieldnames=columns, extrasaction="raise")
     writer.writeheader()
     # for row in medals_table:
     #     # print(row)  # It prints the row of dict as it in the list
