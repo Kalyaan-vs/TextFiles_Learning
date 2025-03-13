@@ -38,7 +38,7 @@ data = [
 # with open(plant_filename, 'w') as plants:
 #     for plant in data:
 #         plants.write(plant)
-#
+#     plants.writelines("\n".join(data) + "\n")
 print(data)
 print(type(data))
 string_representation = data.__str__()
