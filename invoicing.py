@@ -79,7 +79,7 @@ def record_invoice(invoice_file: TextIO,
         new_invoice_number = f"{year}-{1:04d}"
     last_line_ptr = invoice_file.tell()
 
-    print(f"{new_invoice_number}\t{company:16}\t{amount}", file=invoice_file)
+    print(f"{new_invoice_number}\t{company}\t{amount}", file=invoice_file)
 
     return last_line_ptr
 
